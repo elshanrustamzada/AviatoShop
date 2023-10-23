@@ -22,10 +22,40 @@ namespace AviatoShop.Controllers
             _signInManager = signInManager;
         }
 
+        #region Login
         public IActionResult Login()
         {
             return View();
         }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Login(LoginVM loginVM)
+        {
+            AppUser? user = await _userManager.FindByNameAsync(loginVM.Username);
+            if (user == null)
+            {
+                ModelState.AddModelError("", "Username or Password is wrong");
+                return View();
+            }
+            if (user.IsDeactive)
+            {
+                ModelState.AddModelError("", "Your Account is deactive");
+                return View();
+            }
+            Microsoft.AspNetCore.Identity.SignInResult signInResult = await _signInManager.PasswordSignInAsync(user, loginVM.Password, loginVM.IsRemember, true);
+            if (signInResult.IsLockedOut)
+            {
+                ModelState.AddModelError("", "Your Account is blocked");
+                return View();
+            }
+            if (!signInResult.Succeeded)
+            {
+                ModelState.AddModelError("", "Username or Password is wrong");
+                return View();
+            }
+            return RedirectToAction("Index", "Home");
+        } 
+        #endregion
 
         #region Register
         public IActionResult Register()
@@ -79,5 +109,6 @@ namespace AviatoShop.Controllers
         //    }
         //} 
         #endregion
+
     }
 }

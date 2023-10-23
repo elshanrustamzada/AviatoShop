@@ -253,7 +253,23 @@
 											<li role="separator" class="divider"></li>
 											<li><a asp-controller="Pages" asp-action="Login">Login Page</a></li>
 											<li><a asp-controller="Pages" asp-action="Register">Signin Page</a></li>
-											<li><a href="forget-password.html">Forget Password</a></li>
+											@if (!User.Identity.IsAuthenticated)
+											{
+												<li><a href="forget-password.html">Forget Password</a></li>
+											}
+											else
+											{
+												if (!User.IsInRole("Admin"))
+												{
+													<li><a>@User.Identity.Name</a></li>
+													<li><a asp-controller="Pages" asp-action="Logout">Logout</a></li>
+												}
+												else
+												{
+													<li><a asp-area="Admin" asp-controller="Dashboard" asp-action="Index">@User.Identity.Name</a></li>
+													<li><a asp-controller="Pages" asp-action="Logout">Logout</a></li>
+												}
+											}
 										</ul>
 									</div>
 
