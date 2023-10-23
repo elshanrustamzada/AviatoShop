@@ -1,4 +1,6 @@
-﻿<section class="signin-page account">
+﻿@model LoginVM
+
+<section class="signin-page account">
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
@@ -7,14 +9,22 @@
                         <img src="images/logo.png" alt="">
                     </a>
                     <h2 class="text-center">Welcome Back</h2>
-                    <form class="text-left clearfix" action="index.html">
+                    <div asp-validation-summary="ModelOnly" style="color:red"></div>
+                    <form class="text-left clearfix" method="post">
                         <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Email">
+                            <input asp-for="Username" class="form-control" placeholder="Username">
+                            <span asp-validation-for="Username" style="color:red"></span>
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-control" placeholder="Password">
+                            <input asp-for="Password" class="form-control" placeholder="Password">
+                            <span asp-validation-for="Password" style="color:red"></span>
                         </div>
                         <div class="text-center">
+                            <div class="login-toggle-btn">
+                                <input asp-for="IsRemember">
+                                <label for="remember">Remember me</label>
+                                <a>Forgot Password?</a>
+                            </div>
                             <button type="submit" class="btn btn-main text-center">Login</button>
                         </div>
                     </form>
@@ -24,3 +34,7 @@
         </div>
     </div>
 </section>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}
