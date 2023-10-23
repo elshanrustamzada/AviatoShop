@@ -251,3 +251,9 @@ C:\Users\elsha\OneDrive\Desktop\AviatoShop\AviatoShop\AviatoShop\bin\Debug\net7.
 C:\Users\elsha\OneDrive\Desktop\AviatoShop\AviatoShop\AviatoShop\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
 C:\Users\elsha\OneDrive\Desktop\AviatoShop\AviatoShop\AviatoShop\bin\Debug\net7.0\Mono.TextTemplating.dll
 C:\Users\elsha\OneDrive\Desktop\AviatoShop\AviatoShop\AviatoShop\bin\Debug\net7.0\System.CodeDom.dll
+C:\Users\elsha\OneDrive\Desktop\AviatoShop\AviatoShop\AviatoShop\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\elsha\OneDrive\Desktop\AviatoShop\AviatoShop\AviatoShop\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\elsha\OneDrive\Desktop\AviatoShop\AviatoShop\AviatoShop\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\elsha\OneDrive\Desktop\AviatoShop\AviatoShop\AviatoShop\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\elsha\OneDrive\Desktop\AviatoShop\AviatoShop\AviatoShop\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\elsha\OneDrive\Desktop\AviatoShop\AviatoShop\AviatoShop\bin\Debug\net7.0\Microsoft.Extensions.Options.dll

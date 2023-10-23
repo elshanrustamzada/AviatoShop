@@ -99,7 +99,7 @@ namespace AviatoShop.Areas.Admin.Controllers
                     ModelState.AddModelError("Photo", "Max 1Mb");
                     return View();
                 }
-                string folder = Path.Combine(_env.WebRootPath, "img", "slider");
+                string folder = Path.Combine(_env.WebRootPath, "images", "slider");
                 //Sekil silmenin kodu
                 string path = Path.Combine(folder, dbSlider.Image);
                 if (System.IO.File.Exists(path))
