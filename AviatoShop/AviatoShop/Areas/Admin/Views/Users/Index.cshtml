@@ -1,0 +1,64 @@
+﻿@model List<UserVM>
+
+<div class="col-md-12 my-4">
+    <div class="card shadow">
+        <div class="card-body">
+            <div class="d-flex justify-content-between">
+                <h5 class="card-title">Users</h5>
+                <a class="btn btn-primary text-white mb-3" asp-action="Create">Create</a>
+            </div>
+            <table class="table table-bordered table-hover mb-0">
+                <thead>
+                    <tr>
+                        <th class="text-dark font-weight-bold">Fullname</th>
+                        <th class="text-dark font-weight-bold">Username</th>
+                        <th class="text-dark font-weight-bold">Email</th>
+                        <th class="text-dark font-weight-bold">Role</th>
+                        <th class="text-dark font-weight-bold">Status</th>
+                        <th class="text-dark font-weight-bold" style="text-align:end">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (UserVM item in Model)
+                    {
+                        <tr>
+                            <td>@item.Fullname</td>
+                            <td>@item.Username</td>
+                            <td>@item.Email</td>
+                            <td>@item.Role</td>
+                            <td>
+                                @if (!item.IsDeactive)
+                                {
+                                    <span class="btn btn-success">Aktiv</span>
+                                }
+                                else
+                                {
+                                    <span class="btn btn-danger">Passiv</span>
+                                }
+                            </td>
+                            <td class="d-flex justify-content-end">
+                                <div class="d-flex align-items-lg-center" style="height:110px">
+                                    <a class="btn btn-warning" style="margin-left:3px" asp-action="Detail" asp-route-id="@item.Id">Detail</a>
+                                    <a class="btn btn-info" style="margin-left:3px" asp-action="Update" asp-route-id="@item.Id">Update</a>
+                                    @if (item.IsDeactive)
+                                    {
+                                        <a class="btn btn-success" style="margin-left:3px;width:126px" asp-action="Activity" asp-route-id="@item.Id">Activited</a>
+                                    }
+                                    else
+                                    {
+                                        <a class="btn btn-danger" style="margin-left:3px;width:126px" asp-action="Activity" asp-route-id="@item.Id">DeActivited</a>
+                                    }
+                                </div>
+                            </td>
+
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+

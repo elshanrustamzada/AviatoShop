@@ -1,13 +1,16 @@
 ﻿using AviatoShop.DAL;
 using AviatoShop.Helpers;
 using AviatoShop.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace AviatoShop.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    public class SlidersController : Controller
+	[Authorize(Roles = "Admin,Member")]
+
+	public class SlidersController : Controller
     {
         private readonly AppDbContext _db;
         private readonly IWebHostEnvironment _env;
