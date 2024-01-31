@@ -11389,11 +11389,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\elsha\\OneDrive\\Desktop\\AviatoShop\\AviatoShop\\AviatoShop\\AviatoShop.csproj",
+      "projectUniqueName": "C:\\Users\\elsha\\OneDrive\\Documents\\Backend Projects\\Backend\\AviatoShop\\AviatoShop\\AviatoShop\\AviatoShop.csproj",
       "projectName": "AviatoShop",
-      "projectPath": "C:\\Users\\elsha\\OneDrive\\Desktop\\AviatoShop\\AviatoShop\\AviatoShop\\AviatoShop.csproj",
+      "projectPath": "C:\\Users\\elsha\\OneDrive\\Documents\\Backend Projects\\Backend\\AviatoShop\\AviatoShop\\AviatoShop\\AviatoShop.csproj",
       "packagesPath": "C:\\Users\\elsha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\elsha\\OneDrive\\Desktop\\AviatoShop\\AviatoShop\\AviatoShop\\obj\\",
+      "outputPath": "C:\\Users\\elsha\\OneDrive\\Documents\\Backend Projects\\Backend\\AviatoShop\\AviatoShop\\AviatoShop\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\elsha\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -11464,7 +11464,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

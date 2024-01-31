@@ -18,7 +18,8 @@ namespace AviatoShop.Controllers
         {
             HomeVM homeVM = new()
             {
-                Sliders = await _db.Sliders.ToListAsync()
+                Sliders = await _db.Sliders.ToListAsync(),
+                Products = await _db.Products.ToListAsync(),
             };
             return View(homeVM);
         }

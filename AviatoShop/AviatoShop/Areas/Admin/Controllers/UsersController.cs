@@ -30,7 +30,7 @@ namespace AviatoShop.Areas.Admin.Controllers
             List<UserVM> userVMs = new List<UserVM>();
             foreach (AppUser dbUser in dbUsers)
             {
-                UserVM userVM = new UserVM
+                UserVM userVM = new()
                 {
                     Id = dbUser.Id,
                     Fullname = dbUser.Name + " " + dbUser.Surname,

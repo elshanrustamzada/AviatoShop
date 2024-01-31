@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gE7Cbc4U8pt6oVLoewqEemF5g/PHG/2gW/oyBkT6X5dezQAIPDO5mvlW0dA0IrBfIOW4VifteRJY1p+29X51SQ==",
+  "dgSpecHash": "Q/mA7XvRJZAij23HcCuJexpbfsXdksflCAxfxfOjxvQbEFaO/32XZldrzaznnrPgYit38FEgRo/WDdW4BrK0CA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\elsha\\OneDrive\\Desktop\\AviatoShop\\AviatoShop\\AviatoShop\\AviatoShop.csproj",
+  "projectFilePath": "C:\\Users\\elsha\\OneDrive\\Documents\\Backend Projects\\Backend\\AviatoShop\\AviatoShop\\AviatoShop\\AviatoShop.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\elsha\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\elsha\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
